@@ -1,0 +1,11 @@
+.outline{
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px 0;
+  background: linear-gradient(lightblue,lightgreen);
+}
+
+img{
+  height: 3rem;
+  width: 3rem;
+}

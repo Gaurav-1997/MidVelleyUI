@@ -1,0 +1,42 @@
+
+<div class="table-responsive">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Country</th>
+        <th scope="col">Matches</th>
+        <th scope="col">Runs</th>
+        <th scope="col">Wickets</th>
+        <th scope="col">Out on Duck</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of playerList">
+       <td><strong>{{player.id}}</strong></td>
+       <td>{{player.name}}</td>
+       <td>{{player.matchPlayed}}</td>
+       <td>{{player.runScored}}</td>
+       <td>{{player.runScored}}</td>
+       <td>{{player.wickets}}</td>
+       <td>{{player.outOnDuck}}</td>
+       <td>{{player.typeOfPlayer}}</td>
+
+      </tr>
+
+    </tbody>
+  </table>
+
+
+</div>
+<!--
+id: number;
+  name: string;
+  country: string;
+  matchPlayed: number;
+  runScored: number;
+  wickets: number;
+  outOnDuck: number;
+  typeOfPlayer: string -->

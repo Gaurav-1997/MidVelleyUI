@@ -1,0 +1,49 @@
+<div class="form">
+  <h3>Player Registration</h3>
+<form [formGroup]="addPlayerForm" (ngSubmit)="onSubmit()">
+  <div class="inputField">
+    <label for="">Id</label>
+    <input type="text" formControlName="Id" class="form-control" />
+  </div>
+
+  <div class="inputField">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" formControlName="name" placeholder="Player Name" required/>
+  </div>
+  <div class="inputField">
+    <label for="country">Country</label>
+    <input type="text" class="form-control" formControlName="country" placeholder="Country Name" required/>
+  </div>
+  <div class="inputField">
+    <label for="matchPlayed">Match Played</label>
+    <input type="number" class="form-control" formControlName="matchPlayed" required/>
+  </div>
+  <div class="inputField">
+    <label for="runScored">Run Scored</label>
+    <input type="number" class="form-control" formControlName="runScored" />
+  </div>
+  <div class="inputField">
+    <label for="wickets">Wickets</label>
+    <input type="number" class="form-control" formControlName="wickets" />
+  </div>
+  <div class="inputField">
+    <label for="outOnDuck">Out on Duck</label>
+    <input type="number" class="form-control" formControlName="outOnDuck" />
+  </div>
+  <div class="inputField">
+    <label for="">Type of Player</label>
+    <select name="" id="" class="form-control" formControlName="typeOfPlayer" required>
+      <option value="Select Player Type" selected disabled>Select Player Type</option>
+      <option value="Batsmen">Batsmen</option>
+      <option value="Bowler">Bowler</option>
+      <option value="Wicketkeeper/Bastmen">Wicketkeeper/Bastmen</option>
+      <option value="All-Rounder">All-Rounder</option>
+    </select>
+  </div>
+
+  <button type="submit" [disabled]="addPlayerForm.valid" class="btn btn-primary d-flex mx-auto my-1 px-5">
+    Add Player
+  </button>
+</form>
+
+</div>
