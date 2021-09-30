@@ -3,7 +3,7 @@
 <form [formGroup]="addPlayerForm" (ngSubmit)="onSubmit()">
   <div class="inputField">
     <label for="">Id</label>
-    <input type="text" formControlName="Id" class="form-control" />
+    <input type="text"class="form-control" />
   </div>
 
   <div class="inputField">
@@ -41,7 +41,7 @@
     </select>
   </div>
 
-  <button type="submit" [disabled]="addPlayerForm.valid" class="btn btn-primary d-flex mx-auto my-1 px-5">
+  <button type="submit" [disabled]="addPlayerForm.valid" class="btn btn-primary d-flex mx-auto my-1 px-5" (click)="onSubmit()">
     Add Player
   </button>
 </form>
